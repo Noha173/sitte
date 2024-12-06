@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة هبوط مع نموذج تسجيل</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            font-size: 36px;
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            color: #555;
+            margin: 20px 0;
+        }
+        .cta-button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        .cta-button:hover {
+            background-color: #45a049;
+        }
+        form {
+            margin-top: 30px;
+            text-align: left;
+        }
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            padding: 12px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>مرحبًا بك في عالم جديد!</h1>
+        <p>نحن نقدم لك أفضل العروض والخدمات. سجل الآن لتكون أول من يعرف كل جديد!</p>
+        <a href="#form-section" class="cta-button">سجل الآن</a>
+
+        <!-- نموذج التسجيل -->
+        <div id="form-section">
+            <h2>نموذج التسجيل</h2>
+            <form action="https://example.com/submit" method="POST">
+                <input type="text" name="full-name" placeholder="اسمك الكامل" required><br>
+                <input type="email" name="email" placeholder="بريدك الإلكتروني" required><br>
+                <input type="submit" value="تسجيل">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
